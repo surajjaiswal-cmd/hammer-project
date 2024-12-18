@@ -86,7 +86,7 @@ function dropdownProducts() {
       if (item.category === `${cateName}`) {
         products += `
       <div class="viwe-categories-item" >
-      <a href="../html/cartpage.html" onclick="showProductId('${item.id}')">
+      <a href="cartpage.html" onclick="showProductId('${item.id}')">
       <img src="${item.image}" alt="product image">
       <h6 class="mt-2">${item.name}</h6>
       </a>
@@ -118,7 +118,7 @@ function dropdownProducts() {
         </div>
         <div class="row">
             <div class="col text-center ">
-                <a href="../html/viewall.html" class="open-categories-item" onclick="showProductCategory('${
+                <a href="viewall.html" class="open-categories-item" onclick="showProductCategory('${
                   categories[i]
                 }')"><u>VIWE ALL</u></a>
             </div>
@@ -213,7 +213,7 @@ function searchPart() {
       ) {
         let options = document.createElement("li");
         options.innerHTML = `
-         <a href="../html/cartpage.html" onclick="showProductId('${item.id}')">
+         <a href="cartpage.html" onclick="showProductId('${item.id}')">
          <div>
            <img src="${item.image}" alt="${item.name}"> 
          </div>
@@ -240,7 +240,7 @@ function DynamicCard(productCards, str, start, end) {
       const item = items[i];
       productCards.innerHTML += `
       <div class="${str} bg-light rounded mx-2 text-center" id="${item.id}">
-        <a href="../html/cartpage.html" onclick="showProductId('${item.id}')">
+        <a href="cartpage.html" onclick="showProductId('${item.id}')">
         <img class="s2-card-img" src="${item.image}" alt="Product Image")>
         </a>
         <div class="img-details mb-2 rounded">
@@ -275,7 +275,7 @@ function s3Daynamic() {
             <img src="${slide.imgCutSrc}" class="s31-slide img-fluid">
             <div class="carousel-caption">
               <p>${slide.caption}</p>
-            <a href="../html/viewall.html" class="s3-buy-button" onclick="showProductCategory('${slide.category}')"> BUY NOW</a>
+            <a href="viewall.html" class="s3-buy-button" onclick="showProductCategory('${slide.category}')"> BUY NOW</a>
         </div>
     </div>`;
     });
@@ -295,7 +295,7 @@ function s4Daynamic() {
     <div class="row">
       <div class="col-6">
         <div class="s4-img-div">
-          <a href="../html/cartpage.html" onclick="showProductId('${slide.id1}')"><img class="s4-slide-img" src="${slide.img1}" alt="section-4 slide imgs">
+          <a href="cartpage.html" onclick="showProductId('${slide.id1}')"><img class="s4-slide-img" src="${slide.img1}" alt="section-4 slide imgs">
           <div class="carousel-caption">
             <p class="s4-big-img-details ${slide.textColor1} ">${slide.img1info}</p>
             <button type="button" class="s4-shop-now">Shop Now</button>
@@ -307,7 +307,7 @@ function s4Daynamic() {
         <div class="row">
           <div class="col">
             <div class="s4-img-div">
-              <a href="../html/cartpage.html" onclick="showProductId('${slide.id2}')"><img class="s4-slide-img" src="${slide.img2}" alt="section-4 slide imgs">
+              <a href="cartpage.html" onclick="showProductId('${slide.id2}')"><img class="s4-slide-img" src="${slide.img2}" alt="section-4 slide imgs">
               <div class="carousel-caption">
                 <p class="s4-small-img-details ${slide.textColor2} ">${slide.img2info}</p>
                 <button type="button" class="s4-shop-now">Shop Now</button>
@@ -317,7 +317,7 @@ function s4Daynamic() {
           </div>
           <div class="col">
             <div class="s4-img-div">
-              <a href="../html/cartpage.html" onclick="showProductId('${slide.id3}')"><img class="s4-slide-img" src="${slide.img3}" alt="section-4 slide imgs">
+              <a href="cartpage.html" onclick="showProductId('${slide.id3}')"><img class="s4-slide-img" src="${slide.img3}" alt="section-4 slide imgs">
               <div class="carousel-caption">
                 <p class="s4-small-img-details ${slide.textColor3} ">${slide.img3info}</p>
                 <button type="button" class="s4-shop-now">Shop Now</button>
@@ -329,7 +329,7 @@ function s4Daynamic() {
         <div class="row mt-4">
           <div class="col">
             <div class="s4-img-div">
-              <a href="../html/cartpage.html" onclick="showProductId('${slide.id4}')"><img class="s4-slide-img" src="${slide.img4}" alt="section-4 slide imgs">
+              <a href="cartpage.html" onclick="showProductId('${slide.id4}')"><img class="s4-slide-img" src="${slide.img4}" alt="section-4 slide imgs">
               <div class="carousel-caption">
                 <p class="s4-small-img-details ${slide.textColor4} ">${slide.img4info}</p>
                 <button type="button" class="s4-shop-now">Shop Now</button>
@@ -339,7 +339,7 @@ function s4Daynamic() {
           </div>
           <div class="col">
             <div class="s4-img-div">
-              <a href="../html/cartpage.html" onclick="showProductId('${slide.id5}')"><img class="s4-slide-img" src="${slide.img5}" alt="section-4 slide imgs">
+              <a href="cartpage.html" onclick="showProductId('${slide.id5}')"><img class="s4-slide-img" src="${slide.img5}" alt="section-4 slide imgs">
               <div class="carousel-caption">
                 <p class="s4-small-img-details ${slide.textColor5} ">${slide.img5info}</p>
                 <button type="button" class="s4-shop-now">Shop Now</button>
@@ -365,7 +365,7 @@ function s4Daynamic() {
    <div class="row">
      <div class="col">
        <div class="s4-img-div">
-         <a href="../html/cartpage.html" onclick="showProductId('${slide.id1}')"><img class="s4-slide-img" src="${slide.img1}" alt="section-4 slide imgs">
+         <a href="cartpage.html" onclick="showProductId('${slide.id1}')"><img class="s4-slide-img" src="${slide.img1}" alt="section-4 slide imgs">
          <div class="carousel-caption">
            <p class="s4-big-img-details ${slide.textColor1}">${slide.img1info}</p>
            <button type="button" class="s4-shop-now">Shop Now</button>
@@ -377,7 +377,7 @@ function s4Daynamic() {
    <div class="row mt-4">
      <div class="col">
        <div class="s4-img-div">
-         <a href="../html/cartpage.html" onclick="showProductId('${slide.id2}')"><img class="s4-slide-img" src="${slide.img2}" alt="section-4 slide imgs">
+         <a href="cartpage.html" onclick="showProductId('${slide.id2}')"><img class="s4-slide-img" src="${slide.img2}" alt="section-4 slide imgs">
          <div class="carousel-caption">
            <p class="s4-small-img-details ${slide.textColor2}">${slide.img2info}</p>
            <button type="button" class="s4-shop-now">Shop Now</button>
@@ -387,7 +387,7 @@ function s4Daynamic() {
      </div>
      <div class="col"2>
        <div class="s4-img-div">
-         <a href="../html/cartpage.html" onclick="showProductId('${slide.id3}')"><img class="s4-slide-img" src="${slide.img3}" alt="section-4 slide imgs">
+         <a href="cartpage.html" onclick="showProductId('${slide.id3}')"><img class="s4-slide-img" src="${slide.img3}" alt="section-4 slide imgs">
          <div class="carousel-caption">
            <p class="s4-small-img-details ${slide.textColor3}">${slide.img3info}</p>
            <button type="button" class="s4-shop-now">Shop Now</button>
@@ -399,7 +399,7 @@ function s4Daynamic() {
    <div class="row mt-4">
      <div class="col">
        <div class="s4-img-div">
-         <a href="../html/cartpage.html" onclick="showProductId('${slide.id4}')"><img class="s4-slide-img" src="${slide.img4}" alt="section-4 slide imgs">
+         <a href="cartpage.html" onclick="showProductId('${slide.id4}')"><img class="s4-slide-img" src="${slide.img4}" alt="section-4 slide imgs">
          <div class="carousel-caption">
            <p class="s4-small-img-details ${slide.textColor4}">${slide.img4info}</p>
            <button type="button" class="s4-shop-now">Shop Now</button>
@@ -409,7 +409,7 @@ function s4Daynamic() {
      </div>
      <div class="col">
        <div class="s4-img-div">
-         <a href="../html/cartpage.html" onclick="showProductId('${slide.id5}')"><img class="s4-slide-img" src="${slide.img5}" alt="section-4 slide imgs">
+         <a href="cartpage.html" onclick="showProductId('${slide.id5}')"><img class="s4-slide-img" src="${slide.img5}" alt="section-4 slide imgs">
          <div class="carousel-caption">
            <p class="s4-small-img-details ${slide.textColor5}">${slide.img5info}</p>
            <button type="button" class="s4-shop-now">Shop Now</button>
@@ -440,7 +440,7 @@ function s6DynamicCard() {
       let backCard = "";
       if (item.s6cardback) {
         item.s6cardback.forEach((backitem) => {
-          backCard += `<a href="../html/cartpage.html" onclick="showProductId('${backitem.id}')">
+          backCard += `<a href="cartpage.html" onclick="showProductId('${backitem.id}')">
           <div class="s6-card1" id="${backitem.id}">
             <img src="${backitem.image}" alt="slide back imgs ">
             <div>
@@ -464,7 +464,7 @@ function s6DynamicCard() {
           <div class="card-side card-back">
             ${backCard}
             <div class="row">
-              <a href="../html/viewall.html" class="col text-center mt-1">
+              <a href="viewall.html" class="col text-center mt-1">
                 <h6>see more</h6>
               </a>
             </div>

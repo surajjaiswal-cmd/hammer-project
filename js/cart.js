@@ -15,7 +15,7 @@ function getCartItems() {
 }
 
 let cartItem = getCartItems();
-// adding one more property(quantity) and value in every object
+// adding one more property(quantity) and value in every object 
 addQunatityToCartItem();
 function addQunatityToCartItem() {
   cartItem.forEach((item1) => {
