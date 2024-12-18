@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/tital-logo.png">
+    <script src="https://kit.fontawesome.com/3635c4cce0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <!-- header------------------------------------------------------------------>
+    <header id="mainHeader" class="container-fluid">
+        <div class="container-xxl d-flex justify-content-between align-items-center py-2 relative">
+
+            <div class="brand-img-folder">
+                <a href="#"><img class="brand-img-dark" src="../img/HAMMER-LOGO-DARK.avif" alt="HAMMER_lOGO">
+                </a>
+                <a href="#"><img class="brand-img-white" src="../img/HAMMER-LOGO-WHITE.webp" alt="HAMMER_lOGO">
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown-here">
+                    <a class="nav-link" href="#">Products
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <!-- dropdown manu products ------------------------------>
+                    <div class="container-fluid product-dropdown p-0">
+                        <div class="row">
+                            <div class="categories-folder col-3">
+                                <div class="categories" data-categorie="cate1">
+                                    Smartwatch
+                                </div>
+                                <div class="categories" data-categorie="cate2">
+                                    True Wireless Earbuds
+                                </div>
+                                <div class="categories" data-categorie="cate3">
+                                    Headphones
+                                </div>
+                                <div class="categories" data-categorie="cate4">
+                                    Electric Toothbrush
+                                </div>
+                                <div class="categories" data-categorie="cate5">
+                                    Speaker
+                                </div>
+                                <div class="categories" data-categorie="cate6">
+                                    Bluetooth Earphone
+                                </div>
+                                <div class="categories" data-categorie="cate7">
+                                    Charging Essentials
+                                </div>
+
+                            </div>
+                            <div class="categories-products col-9">
+                                <!-- containt created daynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">Combos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Warranty Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gifting Witn Hammer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Refurbished Products</a>
+                </li>
+            </ul>
+            <div class="icon-folder ">
+                <a href="#" class="login social-icon ">
+                    <span class="material-symbols-outlined fs-3">
+                        person
+                    </span></a>
+                <a href="#" class="search social-icon mx-3">
+                    <span class="material-symbols-outlined fs-3">
+                        search
+                    </span></a>
+                <a href="#" class="shoppingbag social-icon ">
+                    <div class="bag-count"> </div>
+                    <span class="  material-symbols-outlined fs-3">
+                        shopping_bag
+                    </span>
+                </a>
+                <a href="#" class="menu social-icon menu-bar-icon">
+                    <span class=" material-symbols-outlined fs-3 ">
+                        density_medium
+                    </span>
+                </a>
+            </div>
+
+        </div>
+        <hr class="header-hr">
+
+
+
+        <!-- to go on top -------------------->
+        <a href="#"><img src="../img/scroll-up.png" class="scroll-up-btn" alt="go on top"></a>
+    </header>
+
+    <main>
+
+        <!-- search option ---------------------------------------->
+
+        <div class="container-fluid search-bar">
+            <div class="input-folder ">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-close-btn"> ✕ </button>
+            </div>
+            <ul class="bg-white">
+                <!-- containt ctreated dynaically by js  -->
+            </ul>
+        </div>
+
+
+        <!-- sectionn 1 img slides------------------------------------------------->
+
+        <div class="container-xxl  section-1">
+            <div class="row">
+                <div class="col">
+
+                    <div id="carouselExample" class="carousel slide  " data-bs-ride="carousel">
+
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                                class="active slided" aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <a href="../html/cartpage.html" onclick="showProductId('005')"><img
+                                        src="../img/top-banner1.webp" class=" s1-slide" alt="Slide 1"></a>
+                                <a href="../html/cartpage.html" onclick="showProductId('005')"><img
+                                        src="../img/top-banner1-cut.webp" class="s11-slide "></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="../html/cartpage.html" onclick="showProductId('003')"><img
+                                        src="../img/top-banner2.webp" class=" s1-slide" alt="Slide 2"></a>
+                                <a href="../html/cartpage.html" onclick="showProductId('003')"><img
+                                        src="../img/top-banner2-cut.webp" class="s11-slide "></a>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a href="../html/cartpage.html" onclick="showProductId('004')"><img
+                                        src="../img/top-banner3.webp" class=" s1-slide" alt="Slide 3"></a>
+                                <a href="../html/cartpage.html" onclick="showProductId('004')"><img
+                                        src="../img/top-banner3-cut.webp" class="s11-slide "></a>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a href="../html/cartpage.html" onclick="showProductId('026')"><img
+                                        src="../img/top-banner4.webp" class=" s1-slide" alt="Slide 4"></a>
+                                <a href="../html/cartpage.html" onclick="showProductId('026')"><img
+                                        src="../img/top-banner4-cut.webp" class="s11-slide "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section 2 top selling card-------------------------------------------------------->
+
+        <div class="container-xxl section-2">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Top Selling</h2>
+                </div>
+            </div>
+            <div class="s2-card-part  mt-5">
+                <!-- containt ctreated dynaically by js  -->
+            </div>
+        </div>
+
+        <!-- section 3  top categories image slide on click---------------------------------------->
+
+        <div class="container-xxl p-0  section-3 ">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Top categories</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col section-3-col">
+
+                    <div id="carouselExampleDark" class="carousel slide s3-curousel">
+                        <div class="carousel-indicators s3-button">
+                            <div data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active ">Smart
+                                Watches
+                            </div>
+                            <div data-bs-target="#carouselExampleDark" data-bs-slide-to="1">Headphones
+                            </div>
+                            <div data-bs-target="#carouselExampleDark" data-bs-slide-to="2">True wirless
+                                Earbuds
+                            </div>
+                            <div data-bs-target="#carouselExampleDark" data-bs-slide-to="3">Electric Toothbrush
+                            </div>
+                        </div>
+
+                        <div class="carousel-inner s3-inner">
+                            <!-- containt ctreated dynaically by js  -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 4 hammer grab list container slide when click----------------------------->
+
+        <div class="container-xxl section-4 ">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Hammer Grab List</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                    <div id="carouselExampleDark1" class="carousel slide s4-curousel-1">
+                        <div class="carousel-indicators s4-button">
+                            <div data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active ">New
+                                Launched
+                            </div>
+                            <div data-bs-target="#carouselExampleDark1" data-bs-slide-to="1">Best Sellers
+                            </div>
+                            <div data-bs-target="#carouselExampleDark1" data-bs-slide-to="2">Budget Buys
+                            </div>
+                        </div>
+                        <div class="carousel-inner s4-inner-1">
+                            <!-- containt ctreated dynaically by js  -->
+
+                        </div>
+                    </div>
+                    <div id="carouselExampleDark2" class="carousel slide s4-curousel-2">
+                        <div class="carousel-indicators s4-button">
+                            <div data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active ">New
+                                Launched
+                            </div>
+                            <div data-bs-target="#carouselExampleDark2" data-bs-slide-to="1">Best Sellers
+                            </div>
+                            <div data-bs-target="#carouselExampleDark2" data-bs-slide-to="2">Budget Buys
+                            </div>
+                        </div>
+                        <div class="carousel-inner s4-inner-2">
+                            <!-- containt ctreated dynaically by js  -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 5 featured collection  card grid--------------------------------------------------->
+        <!--  same as section 2 only some classe are changged --------------------->
+
+        <div class="container-xxl section-2">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Featured Collection</h2>
+                </div>
+            </div>
+            <div class=" s5-card-part mt-5">
+                <!-- containt ctreated dynaically by js  -->
+
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="../html/viewall.html" class="btn btn-dark s5-viweall"
+                        onclick="showProductCategory('')">VIEW ALL</a>
+                </div>
+            </div>
+        </div>
+        <!-- section 6 card collection list---------------------------------------->
+
+        <div class="container-fluid section-6">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Collection list</h2>
+                </div>
+            </div>
+            <div class="s6-card-part mt-5 ">
+                <!-- containt ctreated dynaically by js  -->
+
+            </div>
+        </div>
+
+        <!-- section 7 quality img comparison ------------------------------------->
+
+        <div class="cotainer-fluid section-7">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2>Compare Product's Quality</h2>
+                        </div>
+                    </div>
+
+                    <div class="image-comparison ">
+                        <div class="images-container text-center">
+                            <img class="before-image " src="../img/s7/s7-img1.webp" alt="" />
+                            <img class="after-image" src="../img/s7/s7-img2.webp" alt="" />
+
+                            <div class="slider-line"></div>
+                            <div class="slider-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                                </svg>
+                            </div>
+
+                            <input type="range" class="slider" min="0" max="100" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- section 8 available on  online shop slider------------------------------------------>
+
+        <div class="container-xxl section-8 ">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Also Available On</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col section-8-col">
+
+                    <div id="carouselExampleDark8" class="carousel  slide" data-bs-ride="carousel">
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <div class="row text-center">
+                                    <div class="col d-none d-md-block "><a
+                                            href="https://www.amazon.in/stores/HAMMER/page/BE0D4404-9535-4272-B2DE-FE2C637B7CCF?&linkCode=sl2&tag=storeid0a-21&linkId=798d3ef237d18a4eac1ec0b5680b62a9&language=en_IN&ref_=as_li_ss_tl"><img
+                                                src="../img/s8/s8-img1.png" alt="social-icon"></a></div>
+                                    <div class="col"><a
+                                            href="https://www.flipkart.com/audio-video/headphones/hammer~brand/pr?sid=0pm,fcn&marketplace"><img
+                                                src="../img/s8/s8-img2.png" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://www.myntra.com/hammer?utm_source=dms_trafficaffiliates&utm_medium=dms_cuelinks_rev&utm_campaign=dms_trafficaffiliates_cuelinks_rev_20241203clw7fa4f26ta"><img
+                                                src="../img/s8/s8-img3.png" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://www.reliancedigital.in/search?q=hammer:relevance"><img
+                                                src="../img/s8/s8-img4.png" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col d-none d-md-block"><a
+                                            href="https://www.tatacliq.com/hammer/c-mbh12b10508?cid=af:homepage:cuelinks:hasoffers:15032017"><img
+                                                src="../img/s8/s8-img5.png" alt="social-icon"></a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row text-center">
+                                    <div class="col d-none d-md-block"><a href="https://cred.club/"><img
+                                                src="../img/s8/s8-img6.webp" alt="social-icon"></a></div>
+                                    <div class="col"><a
+                                            href="https://www.nykaa.com/brands/hammer/c/14152?root=search,brand_menu,brand_list,HAMMER"><img
+                                                src="../img/s8/s8-img7.png" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://www.croma.com/searchB?q=Hammer%3Arelevance&text=Hammer"><img
+                                                src="../img/s8/s8-img8.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://blinkit.com/prn/hammer-pulse-4.0-smart-watch/prid/506673"><img
+                                                src="../img/s8/s8-img9.png" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col d-none d-md-block"><a
+                                            href="https://www.amazon.in/stores/HAMMER/page/BE0D4404-9535-4272-B2DE-FE2C637B7CCF?&linkCode=sl2&tag=storeid0a-21&linkId=798d3ef237d18a4eac1ec0b5680b62a9&language=en_IN&ref_=as_li_ss_tl"><img
+                                                src="../img/s8/s8-img10.png" alt="social-icon"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark8"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark8"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 9 shop the look----------------------------------------------->
+
+        <div class="container-fluid p-0 section-9">
+            <div class="row">
+                <h2 class="text-center">
+                    Shop The Look
+                </h2>
+            </div>
+            <div class="row mt-5 s9-row2">
+                <div class="col-9 s9-img-div">
+                    <img class="s9-img" src="../img/s9/s9-img1.webp" alt="s9-img1">
+                    <a href="#013"><span class="material-symbols-outlined shopping_bag-1">
+                            shopping_bag
+                        </span></a>
+                    <a href="#014"><span class="material-symbols-outlined shopping_bag-2">
+                            shopping_bag
+                        </span></a>
+                    <a href="#015"><span class="material-symbols-outlined shopping_bag-3">
+                            shopping_bag
+                        </span></a>
+                </div>
+                <div class="col-3">
+                    <div class="s9-card-part mt-5">
+
+                        <!-- containt ctreated dynaically by js  -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 10 read what innterests you----------------------------------->
+
+        <div class="container-xxl  section-10">
+            <div class="row">
+                <h2 class="text-center">READ WHAT INTERESTS YOU</h2>
+            </div>
+            <div class="s10-part">
+                <div class="s10-img-part">
+                    <a href="#"><img src="../img/S10/s10-img1.webp" alt="s10-pictures" id="s10-img1"></a>
+                    <a href="#"><img src="../img/S10/s10-img2.webp" alt="s10-pictures" id="s10-img2"></a>
+                    <a href="#"><img src="../img/S10/s10-img3.webp" alt="s10-pictures" id="s10-img3"></a>
+                    <a href="#"><img src="../img/S10/s10-img4.webp" alt="s10-pictures" id="s10-img4"></a>
+                    <a href="#"><img src="../img/S10/s10-img5.webp" alt="s10-pictures" id="s10-img5"></a>
+                </div>
+                <div class="s10-details-part">
+                    <div class="s10-details" id="s10-details-1" data-img="s10-img1">
+                        <div class="li">&emsp; 01 &emsp;&emsp;</div>
+                        <div class="s10-pera-div">
+                            <p class="s10-p">Water Resistance vs. Waterproof: What is the Difference for Your Smartwatch
+                            </p>
+                            <button type="button" class="s10-button"><u>Learn More</u></button>
+                            <hr class="s10-hr">
+                        </div>
+                    </div>
+                    <div class="s10-details" id="s10-details-2" data-img="s10-img2">
+                        <div class="li">&emsp; 02 &emsp;&emsp;</div>
+                        <div class="s10-pera-div">
+                            <p class="s10-p">Top 7 Steps to Stay Fit with your Bluetooth Smartwatch</p>
+                            <button type="button" class="s10-button"><u>Learn More</u></button>
+                            <hr class="s10-hr">
+                        </div>
+                    </div>
+                    <div class="s10-details" id="s10-details-3" data-img="s10-img3">
+                        <div class="li">&emsp; 03 &emsp;&emsp;</div>
+                        <div class="s10-pera-div">
+                            <p class="s10-p">5 Best Hacks to Save Bluetooth Calling Smartwatch's Battery</p>
+                            <button type="button" class="s10-button"><u>Learn More</u></button>
+                            <hr class="s10-hr">
+                        </div>
+                    </div>
+                    <div class="s10-details" id="s10-details-4" data-img="s10-img4">
+                        <div class="li">&emsp; 04 &emsp;&emsp;</div>
+                        <div class="s10-pera-div">
+                            <p class="s10-p">How Bluetooth Smartwatch is Helpful in Women's Safety</p>
+                            <button type="button" class="s10-button"><u>Learn More</u></button>
+                            <hr class="s10-hr">
+                        </div>
+                    </div>
+                    <div class="s10-details" id="s10-details-5" data-img="s10-img5">
+                        <div class="li">&emsp; 05 &emsp;&emsp;</div>
+                        <div class="s10-pera-div">
+                            <p class="s10-p">Active Noise Cancellation Vs Passive Noise Cancellation
+                            </p>
+                            <button type="button" class="s10-button"><u>Learn More</u></button>
+                            <hr class="s10-hr">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- section 11 In the Press----------------------------------------------->
+        <!-- only img changed or everthing same as section-8 -->
+
+        <div class="container-xxl section-8 ">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>In the Press</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col section-8-col">
+
+                    <div id="carouselExampleDark11" class="carousel  slide" data-bs-ride="carousel">
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="row text-center">
+                                    <div class="col d-none d-md-block "><a
+                                            href="https://yourstory.com/2022/01/startup-news-updates-jan-7-2022-shark-tank-india"><img
+                                                src="../img/s11/s11-img1.webp" alt="social-icon"></a></div>
+                                    <div class="col"><a href="https://inc42.com/"><img src="../img/s11/s11-img2.webp"
+                                                alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://timesofindia.indiatimes.com/gadgets-news/hammer-fit-smartwatch-launched-in-india-price-features-and-more/articleshow/100939997.cms"><img
+                                                src="../img/s11/s11-img3.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="http://www.univarta.com/news/business/story/2979390.html"><img
+                                                src="../img/s11/s11-img4.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col d-none d-md-block"><a
+                                            href="https://www.aninews.in/news/business/business/featured-in-shark-tank-india-hammer-lifestyle-admits-on-clocking-30-cr-revenue-within-3-years-of-launch20220808184849/"><img
+                                                src="../img/s11/s11-img5.webp" alt="social-icon"></a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item " data-bs-interval="5000">
+                                <div class="row text-center">
+                                    <div class="col d-none d-md-block"><a
+                                            href="https://www.adgully.com/hammer-unveils-its-first-ad-campaign--nail-it-with-hammer-134589.html"><img
+                                                src="../img/s11/s11-img6.webp" alt="social-icon"></a></div>
+                                    <div class="col"><a
+                                            href="https://english.jagran.com/technology/hammer-launches-active-20-and-cyclone-smartwatches-india-check-price-specs-and-other-details-10088323"><img
+                                                src="../img/s11/s11-img7.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://gadgetsnow.indiatimes.com/wearables/hammer-launches-new-smartwatch-earbuds-in-india-price-features-and-more/articleshow/100506555.cms"><img
+                                                src="../img/s11/s11-img8.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col"><a
+                                            href="https://tech.hindustantimes.com/photos/amazon-prime-day-sale-2023-hammer-active-2-0-and-cyclone-smartwatches-unveiled-check-prices-71689348419149.html"><img
+                                                src="../img/s11/s11-img9.webp" alt="social-icon"></a>
+                                    </div>
+                                    <div class="col d-none d-md-block"><a href="https://www.financialexpress.com/"><img
+                                                src="../img/s11/s11-img10.webp" alt="social-icon"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark11"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark11"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart part ------------------------------------------------>
+        <div class="cart-page">
+            <div class="blank-part"></div>
+            <div class="cart-part-border">
+                <div class="cart-part p-3">
+                    <div class="cart-header d-flex justify-content-between ms-4">
+                        <h2> Cart</h2>
+                        <button class="border-0 cart-close me-4">✕</button>
+                    </div>
+                    <hr>
+                    <p class="text-secondary m-3 number-of-item">Total Item In Your Cart : 0</p>
+                    <div class="carts-items-part">
+                        <!-- containt ctreated dynaically by js  -->
+                    </div>
+                    <div class="payment-part text-center">
+                        <div class="cart-header mx-3 d-flex justify-content-between">
+                            <p class="text-secondary ">SUBTOTAL</p>
+                            <p class="fs-5 total-price">Rs. 0000</p>
+                        </div>
+                        <p class="text-center ">Shipping, taxes, and discount codes calculated at checkout.</p>
+                        <button class="cart-buynow ">
+                            BUY NOW <img class="mx-2" src="../img/upi_options.svg" alt="upi img"> >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer-------------------------------------------------------->
+
+    <footer class="bg-light">
+        <div class="container-xxl">
+            <div class="footer-manu">
+                <div class="footer-column-1">
+                    <div class="about-healding">CONNECT WITH US</div>
+                    <div class="about-item" href="#">
+
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i>
+                            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+
+                    </div>
+                    <div class="about-healding" style="line-height: 2rem;">CONNECT US</div>
+                    <div class="about-item">Email :- <span>
+                            <a href="mailto:surajjaiswal0963@gmail.com" class="text-dark fw-bold"
+                                title="mailto:surajjaiswal0963@gmail.com">info@hammeronline.in</a>
+                        </span></div>
+
+
+                    <div class="about-item">Phone :- 99999999</div>
+
+                </div>
+                <div class="footer-column-2">
+                    <div class="about-healding">in store</div>
+                    <a class="about-item" href="#">FAQs</a><br>
+                    <a class="about-item" href="#">Excluusive Offers</a><br>
+                    <a class="about-item" href="#">Track Your Order</a><br>
+                    <a class="about-item" href="#">Affiliate Programme</a>
+
+                </div>
+                <div class="footer-column-3">
+                    <div class="about-healding">hammer</div>
+                    <a class="about-item" href="#">About US</a><br>
+                    <a class="about-item" href="#">Coutact US</a><br>
+                    <a class="about-item" href="#">Blog</a><br>
+                    <a class="about-item" href="#">News</a><br>
+                    <a class="about-item" href="#">Careers</a>
+
+                </div>
+                <div class="footer-column-4">
+                    <div class="about-healding">Support</div>
+                    <a class="about-item" href="#">After Sale Service</a><br>
+                    <a class="about-item" href="#">Privacy Policy</a><br>
+                    <a class="about-item" href="#">Terms of Service</a><br>
+                    <a class="about-item" href="#">Shipping Policy</a><br>
+                    <a class="about-item" href="#">Warranty Registration</a><br>
+                    <a class="about-item" href="#">Register Complaint</a><br>
+                    <a class="about-item" href="#">Corporate Enquiry</a>
+
+                </div>
+                <div class="sign-up-part footer-column-5">
+                    <div class="about-healding ">Sign up and save</div>
+                    <div class="about-item">Subscribe to get special offers, free giveaways, and once-in-a-lifetime
+                        deals.</div><br>
+                    <form>
+                        <input class="input-box" type="text" placeholder="Enter Number "> <br>
+                        <input class="input-box" type="email" placeholder="Enter Your Eamil"> <br>
+                        <button type="submit" class="footer-subscribe"> Subscribe</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center mb-4" style="font-size: .8rem;">
+                    © 2024 HAMMER Clone Made By Suraj Jaiswal Only For Study Purpose
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- scripts---------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/items.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/cartpage.js"></script>
+    <script src="../js/cart .js"></script>
+</body>
+
+</html>
