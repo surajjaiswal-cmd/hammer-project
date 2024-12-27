@@ -87,6 +87,11 @@
     margin-left: -2rem;
 }
 
+.price-part {
+    display: flex;
+    justify-content: space-between;
+}
+
 .increment,
 .decrement {
     background-color: white;
@@ -105,4 +110,23 @@
     border: 0;
     border-radius: 3rem;
     padding: .5rem 0;
+}
+
+@media(max-width:540px) {
+    .cart-part {
+        width: 100vw;
+    }
+
+    .cart-item-details {
+        width: 66%;
+    }
+
+    .cart-item-details .price-part {
+        font-size: .93rem;
+    }
+
+    .inc-dec-part {
+        font-size: .9rem;
+        margin-right: -1rem;
+    }
 }

@@ -14,7 +14,7 @@ function holdOnScreen() {
       scrollup.classList.remove("show");
       scrollup.classList.remove("move");
     }
-    if (window.pageYOffset > scrollDown + 800) {
+    if (window.pageYOffset > scrollDown + 650) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");

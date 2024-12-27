@@ -15,7 +15,7 @@ function getCartItems() {
 }
 
 let cartItem = getCartItems();
-// adding one more property(quantity) and value in every object 
+// adding one more property(quantity) and value in every object
 addQunatityToCartItem();
 function addQunatityToCartItem() {
   cartItem.forEach((item1) => {
@@ -33,12 +33,9 @@ function updateBagCount() {
   if (bagCount.length > 0) {
     bag.style.display = "block";
     bag.innerHTML = bagCount.length;
-  }
-  else {
+  } else {
     bag.style.display = "none";
-    
   }
-  
 }
 
 // function to add product,s ids to local storage
@@ -107,12 +104,12 @@ function showTotalItem() {
     <div class="row cart-item m-3" id="${item.id}">
       <div class="col-4"><img class="cart-item-img" src="${item.image}" alt="cart img">
       </div>
-      <div class="col-8 cart-item-details">
+      <div class="col-8 cart-item-details ">
           <p class="name m-0 ">${item.name}</p>
           <p class="extrainfo  ">${item.extrainfo}</p>
-          <div class="mt-3 d-flex justify-content-between">
+          <div class="mt-3 price-part">
               <div class="price">Rs. ${item.price}</div>
-              <div class="me-5 border">
+              <div class=" border inc-dec-part">
                   <button class="add-remove px-2 border-0 increment" >+</button>
                   <span class="add-remove quantity ">${item.quantity}</span>
                   <button class="add-remove px-2 border-0 decrement">-</button>
@@ -166,7 +163,7 @@ function priceAndQuantity() {
     addQunatityToCartItem();
     updateTotalPrice();
   }
-  
+
   function removeItem(cardId) {
     bagCount = bagCount.filter((item) => item.id !== cardId);
     localStorage.setItem("bagcount", JSON.stringify(bagCount));
