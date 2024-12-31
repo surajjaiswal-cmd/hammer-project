@@ -1,5 +1,5 @@
-//to disaplay bloke header on top in 700px and scroll up button-------------------------
-
+//to disaplay bloke header on top in 700px and scroll up button------------------------- 
+768
 function holdOnScreen() {
   let header = document.getElementById("mainHeader");
   let scrollup = document.querySelector(".scroll-up-btn");
@@ -26,15 +26,6 @@ holdOnScreen();
 function showDropdown() {
   const dropdownButton = document.querySelector(".dropdown-here");
   const dropdownContent = document.querySelector(".product-dropdown");
-  function handleResize() {
-    if (window.innerWidth < 768) {
-      showDropdownClick();
-    } else {
-      showDropdownHover();
-    }
-  }
-  handleResize();
-  window.addEventListener("resize", handleResize);
 
   // Event handler functions
   function handleMouseEnter() {
@@ -45,31 +36,9 @@ function showDropdown() {
     dropdownContent.style.display = "none";
   }
 
-  function handleClick() {
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  }
-
-  // Function for hover-based dropdown
-  function showDropdownHover() {
-    dropdownButton.removeEventListener("click", handleClick); //remove previous event
-    dropdownButton.addEventListener("mouseenter", handleMouseEnter);
-    dropdownContent.addEventListener("mouseenter", handleMouseEnter);
-    dropdownButton.addEventListener("mouseleave", handleMouseLeave);
-    dropdownContent.addEventListener("mouseleave", handleMouseLeave);
-  }
-  // Function for click-based dropdown
-  function showDropdownClick() {
-    dropdownButton.removeEventListener("mouseenter", handleMouseEnter); //remove previous event
-    dropdownContent.addEventListener("mouseenter", handleMouseEnter);
-    dropdownButton.removeEventListener("mouseleave", handleMouseLeave);
-    dropdownContent.removeEventListener("mouseleave", handleMouseLeave);
-
-    dropdownButton.addEventListener("click", handleClick);
-  }
+  dropdownButton.addEventListener("mouseenter", handleMouseEnter);
+  dropdownContent.addEventListener("mouseenter", handleMouseEnter);
+  dropdownButton.addEventListener("mouseleave", handleMouseLeave);
 }
 showDropdown();
 

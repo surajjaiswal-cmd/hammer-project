@@ -169,7 +169,7 @@ h6 {
     height: 2rem;
     background-color: rgba(0, 0, 0, 0);
     opacity: 1;
-    font-size: clamp(.56rem, 2vw, 1.25rem);
+    font-size: clamp(.6rem, 2vw, 1.25rem);
     text-indent: 0;
     margin-top: -90%;
     flex-shrink: 0;
@@ -257,10 +257,10 @@ h3 {
     .s3-button [data-bs-target] {
         font-weight: 500;
         margin-top: -271%;
-        margin-right: .5rem;
-        /* height: 1.10rem; */
+        margin-right: .7rem;
+        height: 1.1rem;
         white-space: normal;
-        overflow: auto;
+        overflow: hidden;
 
     }
 
@@ -274,6 +274,14 @@ h3 {
 
     .s3-slide {
         display: none;
+    }
+
+}
+
+@media(max-width:400px) {
+
+    .s3-button [data-bs-target] {
+        margin-right: .3rem;
     }
 
 }
@@ -337,7 +345,7 @@ h3 {
 
 .s4-button [data-bs-target] {
     width: auto;
-    height: 1.8rem;
+    height: 1.7rem;
     background-color: rgba(0, 0, 0, 0);
     opacity: .9;
     font-size: clamp(.7rem, 2vw, 1.2rem);
@@ -635,7 +643,6 @@ h3 {
     margin-top: 3rem;
 }
 
-
 .image-comparison img {
     width: 100%;
     height: 100%;
@@ -664,7 +671,7 @@ h3 {
 .image-comparison .slider-line {
     position: absolute;
     height: 100%;
-    width: 4px;
+    width: 3px;
     background: #fff;
     left: 50%;
     transform: translateX(-50%);
@@ -674,25 +681,22 @@ h3 {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     color: #fff;
     transform: translate(-50%, -50%) rotateZ(90deg);
 }
 
-@media (max-width:768px) {
+@media (max-width:999px) {
     .image-comparison .slider-line {
-
-        width: 1.5px;
-
+        width: 2.5px;
     }
 
     .image-comparison .slider-icon {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
-
 
 /* section 8 online shop slider==================== */
 .section-8 {
@@ -735,7 +739,6 @@ h3 {
 .section-9 {
     margin-top: 4rem;
     overflow: hidden;
-
 }
 
 .s9-img-div {
@@ -803,6 +806,7 @@ h3 {
     justify-content: space-between;
     white-space: normal;
     overflow-x: auto;
+    scroll-behavior: smooth;
 
 }
 

@@ -1,4 +1,3 @@
-
 //to create product card for section 2 5 and 9==================================
 function DynamicCard(productCards, str, start, end) {
   if (productCards) {
@@ -308,8 +307,24 @@ s6DynamicCard();
 function imgComparison() {
   const slider = document.querySelector(".image-comparison .slider");
   const beforeImage = document.querySelector(".image-comparison .before-image");
+  const afterImage = document.querySelector(".image-comparison .after-image");
   const sliderLine = document.querySelector(".image-comparison .slider-line");
   const sliderIcon = document.querySelector(".image-comparison .slider-icon");
+
+  function updateImages() {
+    const width = window.innerWidth;
+
+    if (width > 999) {
+      beforeImage.src = "img/s7/s7-img1.1.webp";
+      afterImage.src = "img/s7/s7-img2.1.webp";
+    } else if (width > 768) {
+      beforeImage.src = "img/s7/s7-img1.2.jpg";
+      afterImage.src = "img/s7/s7-img2.2.jpg";
+    } else {
+      beforeImage.src = "img/s7/s7-img1.3.jpg";
+      afterImage.src = "img/s7/s7-img2.3.jpg";
+    }
+  }
 
   slider.addEventListener("input", (e) => {
     let sliderValue = e.target.value + "%";
@@ -318,7 +333,11 @@ function imgComparison() {
     sliderLine.style.left = sliderValue;
     sliderIcon.style.left = sliderValue;
   });
+
+  window.addEventListener("resize", updateImages);
+  updateImages(); // Initial call to set the images
 }
+
 imgComparison();
 
 // section 9 shop the look=============================
