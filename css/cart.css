@@ -1,11 +1,13 @@
 .cart-page {
-    position: unset;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100vh;
     z-index: 10;
     display: none;
 }
+
+
 
 .blank-part {
     background-color: rgba(109, 106, 106, 0.4);
@@ -114,15 +116,16 @@
 
 @media(max-width:540px) {
     .cart-part {
-        width: 100vw;
+        width: 90vw;
     }
 
     .cart-item-details {
         width: 66%;
     }
 
-    .cart-item-details .price-part {
-        font-size: .93rem;
+    .cart-item-details .price-part,
+    .extrainfo {
+        font-size: .95rem;
     }
 
     .inc-dec-part {

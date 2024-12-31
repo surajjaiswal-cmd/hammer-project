@@ -51,7 +51,6 @@ function addToCart(itemId) {
 }
 
 // function to open cart and close on click
-cartOpenAndClose();
 
 function cartOpenAndClose() {
   let opencart = document.querySelectorAll(".s2-buyitnow,.shoppingbag");
@@ -68,7 +67,6 @@ function cartOpenAndClose() {
       cartPartBorder.classList.add("visible");
       cartPart.classList.add("visible");
       blankPart.classList.add("visible");
-      cartPage.style.position = "fixed";
       document.body.style.overflow = "hidden";
     }, 10);
     // function to add product cart daynamically in cart
@@ -89,11 +87,11 @@ function cartOpenAndClose() {
     blankPart.classList.remove("visible");
     document.body.style.overflow = "auto";
     setTimeout(() => {
-      cartPage.style.position = "unset";
       cartPage.style.display = "none";
     }, 200);
   }
 }
+cartOpenAndClose();
 
 // adding product daynamically on cart
 function showTotalItem() {
