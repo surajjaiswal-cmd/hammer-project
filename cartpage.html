@@ -417,6 +417,7 @@
             items.forEach((item) => {
                 if (producId === item.id) {
                     productViwe.innerHTML = `
+                <div class="row d-flex    align-items-center">
                 <div class="col-6">
                     <a href="#"><img class="Product-img" src="${item.image}" alt="Product Image"></a>
                 </div>
@@ -429,7 +430,7 @@
                         <button type="button" class="s2-buyitnow  " onclick="addToCart('${item.id}')">BUY IT NOW</button>
                     </div>
                 </div>
-            </div>
+                </div>
                 `;
                 }
             });
