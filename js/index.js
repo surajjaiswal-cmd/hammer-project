@@ -348,6 +348,8 @@ DynamicCard(shopTheLook, "s9-card", 12, 15);
 //section 10 read what innterests=====================
 let details = document.querySelectorAll(".s10-details");
 let images = document.querySelectorAll(".s10-img-part img");
+let allBtn = document.querySelectorAll(".s10-link, .s10-button");
+
 details.forEach((detail) => {
   detail.addEventListener("mouseenter", () => {
     let imgId = detail.getAttribute("data-img");
@@ -358,11 +360,19 @@ details.forEach((detail) => {
   });
 });
 
+allBtn.forEach((btn) => {
+  console.log(btn.id);
+  btn.addEventListener("click", () => {
+    localStorage.setItem("pageid", btn.id);
+  });
+});
+
 //save image id to send in next page to open full details ==================================
 
 function showProductId(Id) {
   localStorage.setItem("pid", Id);
 }
+
 //save category to send in next page to open item with match category
 
 function showProductCategory(cate) {

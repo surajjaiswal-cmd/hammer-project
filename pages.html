@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product View</title>
+    <title>Read</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/tital-logo.png">
     <script src="https://kit.fontawesome.com/3635c4cce0.js" crossorigin="anonymous"></script>
@@ -18,18 +18,39 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
+
     <Style>
-        .Product-img {
-            width: 70%;
-            height: auto;
+        .main-read-part {
+            width: 65%;
         }
 
-        .item-name,
-        .item-price,
-        .item-rating,
-        .item-extrainfo {
-            font-size: clamp(1rem, 2vw, 2.5rem);
+        .main-read-part img {
+            width: 100%;
+            height: auto;
+            margin-top: 1.5rem;
+        }
 
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+
+        @media (max-width:1200px) {
+            .main-read-part {
+                width: 75%;
+            }
+        }
+
+        @media (max-width:1050px) {
+            .main-read-part {
+                width: 85%;
+            }
+        }
+
+        @media (max-width:900px) {
+            .main-read-part {
+                width: 95%;
+            }
         }
 
         @media (max-width:768px) {
@@ -54,8 +75,12 @@
                 color: rgb(0, 0, 0);
             }
 
+
+
+
         }
     </Style>
+
 </head>
 
 <body>
@@ -292,12 +317,11 @@
         </div>
 
 
-        <!-- product viwe here-->
+        <!-- read more here-->
 
-        <div class="container  product-viwe">
-
+        <div class="container-fluid main-read-part">
+            <!-- containt ctreated dynaically by js  -->
         </div>
-
         <!-- cart part ------------------------------------------------>
         <div class="cart-page">
             <div class="blank-part"></div>
@@ -409,33 +433,45 @@
     <script src="js/items.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
     <script>
-        let productViwe = document.querySelector(".product-viwe");
-        let producId = localStorage.getItem("pid");
-        if (productViwe) 
-        {
-            items.forEach((item) => {
-                if (producId === item.id) {
-                    productViwe.innerHTML = `
-                <div class="col-6">
-                    <a href="#"><img class="Product-img" src="${item.image}" alt="Product Image"></a>
-                </div>
-                <div class="col-6">
-                    <div class="img-details mb-2 rounded">
-                        <h6 class="item-name">${item.name}</h6>
-                        <p class="s2-price mt-3 item-price">Rs. ${item.price} <strike class="text-muted">Rs. ${item.actualprice}</strike></p>
-                        <p class="mt-3 item-rating">${item.rating}</p>
-                        <p class="item-extrainfo">${item.extrainfo}</p>
-                        <button type="button" class="s2-buyitnow  " onclick="addToCart('${item.id}')">BUY IT NOW</button>
-                    </div>
-                </div>
-            </div>
-                `;
+        let main = document.querySelector('.main-read-part');
+        let redeDataId = localStorage.getItem('pageid');
+
+        main.innerHTML = "";
+
+        if (main) {
+            s10items.forEach((item) => {
+                if (redeDataId === item.id) {
+                    main.innerHTML = `
+            <h1 class="text-center ">
+              ${item.h1}
+            </h1>
+            <p class="mt-4">
+                ${item.p1}
+            </p>
+            <img src=" ${item.img}" alt="poster">
+            <p class="mt-3">
+                ${item.p2}
+            </p>
+            <h2 class="mt-4"> ${item.h2}</h2>
+            <p>
+               ${item.p3}
+            </p>
+            <h2 class="mt-4"> ${item.h3}</h2>
+            <p>  ${item.p4}
+            </p>
+            <h2 class="mt-4">
+                ${item.h4}
+            </h2>
+            <p>
+                ${item.p5}
+            </p>`;
                 }
             });
         }
+
     </script>
-    <script src="js/cart.js"></script>
 </body>
 
 </html>

@@ -948,6 +948,8 @@ h3 {
     border: 0;
     font-size: .8rem;
     font-weight: 600;
+    text-decoration: none;
+    color: black;
 }
 
 .s10-details:hover .s10-button {
