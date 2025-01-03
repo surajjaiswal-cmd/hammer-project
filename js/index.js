@@ -361,7 +361,6 @@ details.forEach((detail) => {
 });
 
 allBtn.forEach((btn) => {
-  console.log(btn.id);
   btn.addEventListener("click", () => {
     localStorage.setItem("pageid", btn.id);
   });
