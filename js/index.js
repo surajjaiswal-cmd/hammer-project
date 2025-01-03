@@ -348,7 +348,7 @@ DynamicCard(shopTheLook, "s9-card", 12, 15);
 //section 10 read what innterests=====================
 let details = document.querySelectorAll(".s10-details");
 let images = document.querySelectorAll(".s10-img-part img");
-let allBtn = document.querySelectorAll(".s10-link, .s10-button");
+let allBtn = document.querySelectorAll(".s10-link");
 
 details.forEach((detail) => {
   detail.addEventListener("mouseenter", () => {
@@ -360,11 +360,15 @@ details.forEach((detail) => {
   });
 });
 
+// uploda page id to get info in next page
 allBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     localStorage.setItem("pageid", btn.id);
   });
 });
+function showPageId(Id) {
+  localStorage.setItem("pageid", Id);
+}
 
 //save image id to send in next page to open full details ==================================
 
